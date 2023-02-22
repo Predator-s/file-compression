@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script
+      src="https://code.jquery.com/jquery-3.2.1.js">
+  	</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online PDF Compressor</title>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/SamirPaulb/assets/main/filecompressor-favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div style="display: flex;">
+                <div style="flex-basis: 70px;">
+                    <img src="https://raw.githubusercontent.com/SamirPaulb/assets/main/filecompressor-logo.svg" height="84" width="100">
+                </div>
+                <div style="flex-grow: 1;">
+                    <h1 class="title"> Online PDF Compressor </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-three-fifths-tablet is-half-desktop">
+                    <div class="card">
+                        <header class="card-header">
+                            <p id="msg-box" class="card-header-title has-background-warning">Compress your PDFs on Cloud!</p>
+                        </header>
+                        <div class="card-content">
+							<form enctype = "multipart/form-data" onsubmit="return false;" >
+							<input id="file" type="file" name="static_file" />
+							<button id="upload-button" onclick="uploadFile(this.form)"> <i class="fa fa-upload"></i> <b>Upload</b> </button>
+							<br> </br>  <br> </br>
+							<p align="center"> 
+							<button id="download-button" onclick="downloadFile()"> <i class="fa fa-download"></i> <b>Download</b> </button>
+							</p>
+							</form>
+							<div id="static_file_response"> </div>
+							
+							<script type="text/javascript" src="/static/app.js"></script>
+							</script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+</body>
+
+</html>
